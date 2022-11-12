@@ -90,7 +90,6 @@ var finances = [
 // declaring variables 
 let totalMonth
 let gross = 0
-let grossArray
 let average
 
 //get the the value of tatal month by using the .length on the array 
@@ -110,7 +109,21 @@ for(var i=0; i<finances.length; i++){
 console.log(gross)
 
 
-// To get the average divide  the the gross by the total number of months
-average = gross/totalMonth
-average = Math.round(average);
-console.log(average)
+// To get the average for profit create a different array with just profit, sum the total divided by the number of months
+let profitArray = []
+finances.forEach(element => profitArray.push(element[1]))
+console.log(profitArray)
+
+let profit = profitArray.filter(n => n > 0)
+console.log(profit)
+
+average = profit.reduce((a, b) => a + b, 0) / profit.length
+console.log(average.toFixed(0))
+
+
+
+
+
+
+
+
