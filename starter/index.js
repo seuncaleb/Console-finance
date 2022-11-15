@@ -91,34 +91,53 @@ var finances = [
 let totalMonth
 let gross = 0
 let average
+let monthlyChangeAmount=finances[0][1]
+let difference
 
 //get the the value of tatal month by using the .length on the array 
 totalMonth= finances.length;
-console.log(totalMonth)
+//console.log(totalMonth)
 
 // get into a loop to get the gross total of profit and loss by looping through a loop 
 for(var i=0; i<finances.length; i++){
-    for(var j=0; j<finances[i].length; j++){
+   for(var j=0; j<finances[i].length; j++){
 
-        if (typeof finances[i][j] !=='string'){
-            gross += (finances[i][j])
+       if (typeof finances[i][j] !=='string'){
+           gross += (finances[i][j])
             
         }    
     }
 }
-console.log(gross)
+//console.log(gross)
 
 
-// To get the average for profit create a different array with just profit, sum the total divided by the number of months
-let profitArray = []
-finances.forEach(element => profitArray.push(element[1]))
-console.log(profitArray)
+// to get the differences between monthly profit/loss then get the average
 
-let profit = profitArray.filter(n => n > 0)
-console.log(profit)
+for (var i = 1; i < finances.length; i++) {
+    difference = finances[i][1] - finances [i-1][1];
+    monthlyChangeAmount = monthlyChangeAmount + difference}
 
-average = profit.reduce((a, b) => a + b, 0) / profit.length
-console.log(average.toFixed(0))
+   // console.log(monthlyChangeAmount)
+
+// divide the sum of the differences by the length of the array to get he average
+    average = monthlyChangeAmount / finances.length
+     average = Math.round(average)
+
+    //console.log(average)
+    
+
+// to get the greatest increase and lowest increase, find out the highest and lowest value in monthly changes
+
+
+
+
+
+
+    // Final Output 
+
+    let finalOutput = `Financial Analysis \n ---------------- \n Total Months: ${totalMonth} \n Total: ${gross} \n Average Change: ${average}`
+
+    console.log(finalOutput)
 
 
 
