@@ -133,9 +133,10 @@ for (var i = 1; i < finances.length; i++) {
 
 
 
+
     // Final Output 
 
-    let finalOutput = `Financial Analysis \n ---------------- \n Total Months: ${totalMonth} \n Total: ${gross} \n Average Change: ${average}`
+    let finalOutput = `Financial Analysis \n ---------------- \n Total Months: ${totalMonth} \n Total: ${gross} \n Average Change: ${average}\n Greatest Increase in Profit: \n Greatest Decrease in Profit:`
 
     console.log(finalOutput)
 

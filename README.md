@@ -14,7 +14,7 @@ This project is a financial calculation that makes  use of loops, if statements,
 ## Challenges
  * Finding how to use loops to interate through a multidimentional array 
  * Introducing math functions to the code 
- * 
+ * Finding out the highest and lowest increase in profit 
 
  
 ## Screenshoot
