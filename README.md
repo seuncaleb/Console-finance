@@ -17,14 +17,13 @@ This project is a financial calculation that makes  use of loops, if statements,
  * Finding out the highest and lowest increase in profit 
 
  
-## Screenshoot
- [Project Screenshot](./images/seuncaleb.github.io_Bootstrap-Portfolio_.png)
+
 
 ## Link to Repo
-[ Porfolio link ](https://github.com/seuncaleb/Bootstrap-Portfolio) 
+[ Porfolio link ](https://github.com/seuncaleb/Console-finance) 
 
 ## Project Link
-[Project](https://seuncaleb.github.io/Bootstrap-Portfolio/)
+[Project](https://seuncaleb.github.io/Console-finance/)
  
 
 If you have any questions, please contact me at: 
